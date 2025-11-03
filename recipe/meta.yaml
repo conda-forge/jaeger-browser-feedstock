@@ -6,11 +6,11 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/j/jaeger_browser/jaeger_browser-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/j/jaeger_browser/jaeger_browser-{{ version }}.tar.gz
   sha256: 75b019c8a3f66254fece0517ddae17064d1e14b90716270eac6039dd23af41d4
 
 build:
-  number: 2
+  number: 3
   script: "{{ PYTHON }} -m pip install . -vv"
   skip: True  # [win]
 
